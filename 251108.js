@@ -454,6 +454,24 @@ for (; iz<=10; iz++){
 // }
 
 //피보나치 수열 미쳤다. 피보나치 수열 50개 만들기 재시도
+
+//안보고 피보나치 수열만들기 50개 재시도
+
+// 현재와 이전을 더하면 그것이 새로운 이전
+// 그리고 현재는 임시로 할당
+// 
+
+let current = 1;
+let previous = 0;
+
+for(let i=0; i < 50; i++){
+
+  console.log(current);
+  temp = current;
+  current = previous + current;
+  previous = temp;
+}
+0
 1
 1
 2
