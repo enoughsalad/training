@@ -106,4 +106,39 @@ let size = {
 }
 
 let result = calculator.minus(size.y, size.x);
+console.log()
+
 console['log'](result)
+
+console.log(calculator.multiply(2,39));
+
+//console 이라는 객체 log라는 메소드
+
+// 객체의 고유한 동작으로써 함수에 의미부여 가능. 메소드
+
+let recAngle = {
+  width: 30,
+  height: 50,
+  getAria(){
+    return recAngle.width * recAngle.height;
+  }
+}
+
+let triAngle = {
+  width: 15,
+  height: 45,
+  getAria: function(){
+    triAngle.width * triAngle.height / 2;
+  }
+}
+
+//둘다 동일 getAria함수를 다르게 사용가능함
+//이름 중복 피할 수 있고
+// 좀더 객체에 집중해서 함수의 동작부분 작성가능
+
+// 더 의미있는 코드 활용가능.
+triAngle.getAria()
+// > 삼각형. 넓이 구하기
+
+
+
